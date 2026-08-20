@@ -1,0 +1,22 @@
+spring:
+  application:
+    name: blackfriday
+
+  datasource:
+    url: jdbc:postgresql://localhost:5433/blackfriday
+    username: blackfriday
+    password: blackfriday
+    driver-class-name: org.postgresql.Driver
+
+  jpa:
+    hibernate:
+      ddl-auto: update
+    show-sql: true
+    properties:
+      hibernate:
+        format_sql: true
+
+  data:
+    redis:
+      host: localhost
+      port: 6379
